@@ -1,0 +1,27 @@
+{
+  "status": "COMMON_UNSEEN_STATION_COMPUTED",
+  "input_sha256": {
+    "D:\\GW\\GW_State4_Experiments\\outputs\\station_month_provisional.csv": "ecc20c22fa0b52b4ab8295856b35121d0a62bcfdbf138fbbf7e6a757f16f85de",
+    "D:\\GW\\Maharashtra_GW_Download\\downloads\\manual.csv": "5003c9030b34df310f0bdd0527df022b9b0e73aa780b5bbacc88cc49d1be0eb6",
+    "D:\\GW\\Maharashtra_GW_Download\\downloads\\telemetry.csv": "b4bf746c09eae07b7998328a5699ddc22989f7ec829509919b60421e7a366822"
+  },
+  "protocol": {
+    "cohort_assignment": "SHA256(source|station|2026-10|unseen-cohort-v1), 70/15/15 train/calibration/test",
+    "train_targets": "2022-2023",
+    "calibration_and_test_targets": "2024-2025",
+    "features": "latest available value within previous 6 calendar months, lag in months, calendar-month sine/cosine",
+    "regression": "pooled ridge with standardized features, alpha=10, intercept unpenalized",
+    "calibration": "90% absolute residual quantile on disjoint calibration stations; no formal coverage guarantee under dependence or temporal drift",
+    "station_identity": "source-specific; telemetry station names may collide, unresolved official station identity",
+    "exclusions": "candidate sentinels from prior common-protocol run; official dictionary unavailable"
+  },
+  "n_sources": 6,
+  "n_computed": 6,
+  "limitations": [
+    "Common computation does not imply equivalent agency measurements or monitoring schedules",
+    "No official sign/datum validation",
+    "No official missingness schedule, rainfall or GEC-2015 data",
+    "Calibration and test stations disjoint, but calibration/test time windows coincide; exchangeability is unverified",
+    "Only source-specific evaluation; no state ranking or universal interval guarantee"
+  ]
+}

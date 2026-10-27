@@ -1,0 +1,69 @@
+{
+  "four_matched_sources": [
+    "KA_manual",
+    "PB_telemetry",
+    "RJ_telemetry",
+    "TN_telemetry"
+  ],
+  "maharashtra_sources": [
+    "MH_manual",
+    "MH_telemetry"
+  ],
+  "unseen_sources": [
+    "KA_manual",
+    "MH_manual",
+    "MH_telemetry",
+    "PB_telemetry",
+    "RJ_telemetry",
+    "TN_telemetry"
+  ],
+  "n_matched_rows": 12,
+  "n_unseen_rows": 6,
+  "source_files": {
+    "four_matched": {
+      "name": "matched_gap_results.csv",
+      "sha256": "1c0f5f718ba3dad9c97ebb9b573f86c5541dac2948da8937f288176096f61052",
+      "rows": 32
+    },
+    "four_sensitivity": {
+      "name": "extreme_value_sensitivity.csv",
+      "sha256": "0eb10f7b5dd4a9998802c47593df08cccca41b926e740ad60740bf58661eea4e",
+      "rows": 96
+    },
+    "four_unseen": {
+      "name": "unseen_station_metrics.csv",
+      "sha256": "db9747cf6dba807df664cbc5061d6c54119a1acae50bf0cd0d98e591403a53e8",
+      "rows": 4
+    },
+    "mh_matched": {
+      "name": "matched_metrics.csv",
+      "sha256": "b2f2c727b558bff6f996a8d192cd87541ade40ec38737be34cac7b0a9401d23c",
+      "rows": 4
+    },
+    "mh_bootstrap": {
+      "name": "station_bootstrap.csv",
+      "sha256": "5e838df0a29f647ddfcd4485fea6c4e204638dc9dca4853249022592ea7a0b15",
+      "rows": 4
+    },
+    "mh_sensitivity": {
+      "name": "extreme_value_sensitivity(1).csv",
+      "sha256": "f4470e4edb1d9a02c184276bf9e6ed6685f520c377ca48b6dbbffd6bb21ed9e9",
+      "rows": 12
+    },
+    "mh_unseen": {
+      "name": "unseen_station_metrics(1).csv",
+      "sha256": "5e3609fd113453486aab482b38dcab90684bff2f1c5cbeec0229c7a28c86fd3b",
+      "rows": 2
+    }
+  },
+  "warnings": [
+    "Four-state and Maharashtra experimental implementations differ; estimates are not protocol-harmonized",
+    "Manual observation schedules are not authenticated; unobserved months do not necessarily imply missing scheduled measurements",
+    "Telemetry sign/datum and sentinel definitions remain unauthenticated",
+    "IMD rainfall and GEC-2015 resource-estimation experiments have not been performed",
+    "Unseen-station splits and calibration may differ; do not rank states by MAE",
+    "Rajasthan manual forecasting was not performed due to insufficient eligible histories",
+    "Four-state source-specific carry_forward_6 estimates are not equivalent to a pooled five-state model",
+    "No new experiments are performed by this consolidation; this is an evidence reconciliation"
+  ]
+}

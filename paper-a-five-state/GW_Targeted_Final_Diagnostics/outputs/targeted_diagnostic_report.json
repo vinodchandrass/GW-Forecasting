@@ -1,0 +1,61 @@
+{
+  "status": "DIAGNOSTIC_COMPLETE",
+  "source_count": 6,
+  "years_evaluated": 12,
+  "frozen_reconciliation": [
+    {
+      "source": "KA_manual",
+      "reconstructed_mae": 2.436487987404143,
+      "frozen_mae": 2.436487987404143,
+      "difference": 0.0,
+      "pass_tolerance": true
+    },
+    {
+      "source": "MH_manual",
+      "reconstructed_mae": 1.8159003906896123,
+      "frozen_mae": 1.8159003906896123,
+      "difference": 0.0,
+      "pass_tolerance": true
+    },
+    {
+      "source": "MH_telemetry",
+      "reconstructed_mae": 5.3667900473753605,
+      "frozen_mae": 5.3667900473753605,
+      "difference": 0.0,
+      "pass_tolerance": true
+    },
+    {
+      "source": "PB_telemetry",
+      "reconstructed_mae": 12.605103968654213,
+      "frozen_mae": 12.605103968654213,
+      "difference": 0.0,
+      "pass_tolerance": true
+    },
+    {
+      "source": "RJ_telemetry",
+      "reconstructed_mae": 5.095718769792164,
+      "frozen_mae": 5.095718769792164,
+      "difference": 0.0,
+      "pass_tolerance": true
+    },
+    {
+      "source": "TN_telemetry",
+      "reconstructed_mae": 35.676729867779,
+      "frozen_mae": 35.676729867779,
+      "difference": 0.0,
+      "pass_tolerance": true
+    }
+  ],
+  "source_hashes": {
+    "D:\\GW\\GW_State4_Experiments\\outputs\\station_month_provisional.csv": "ecc20c22fa0b52b4ab8295856b35121d0a62bcfdbf138fbbf7e6a757f16f85de",
+    "D:\\GW\\Maharashtra_GW_Download\\downloads\\manual.csv": "5003c9030b34df310f0bdd0527df022b9b0e73aa780b5bbacc88cc49d1be0eb6",
+    "D:\\GW\\Maharashtra_GW_Download\\downloads\\telemetry.csv": "b4bf746c09eae07b7998328a5699ddc22989f7ec829509919b60421e7a366822"
+  },
+  "limitations": [
+    "Target-only trimming is not an official data-quality correction",
+    "Raw telemetry sign/datum and candidate sentinels remain unauthenticated",
+    "Yearly station composition differences do not prove temporal drift",
+    "No causal conclusions or cross-state rankings",
+    "This is a bounded diagnostic; original experimental outputs are not overwritten"
+  ]
+}

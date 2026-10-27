@@ -1,0 +1,126 @@
+{
+  "status": "COMPUTED_PROVISIONAL",
+  "note": "Source-specific experiments; telemetry sign/datum and manual observation schedule remain unauthenticated. No IMD or GEC evaluation.",
+  "sources": {
+    "MH_manual": {
+      "encoding": "cp1252",
+      "counts": {
+        "raw_rows": 636605,
+        "period_rows": 75685,
+        "nonnumeric": 372
+      },
+      "station_months": 74914,
+      "stations": 3871
+    },
+    "MH_telemetry": {
+      "encoding": "utf-8-sig",
+      "counts": {
+        "raw_rows": 3928623,
+        "period_rows": 3928623,
+        "excluded_nonfinite_or_candidate_sentinel": 15
+      },
+      "station_months": 38825,
+      "stations": 1453
+    }
+  },
+  "encoding": "utf-8-sig with cp1252 fallback only if strict UTF-8 fails; decoding replacement is not used.",
+  "matched_metrics": [
+    {
+      "source": "MH_manual",
+      "scenario": "random20",
+      "matched_targets": 2195,
+      "stations": 1355,
+      "observation_weighted_delta_mae": 0.29450569476082006
+    },
+    {
+      "source": "MH_manual",
+      "scenario": "block3",
+      "matched_targets": 1932,
+      "stations": 1330,
+      "observation_weighted_delta_mae": 1.9092701863354038
+    },
+    {
+      "source": "MH_telemetry",
+      "scenario": "random20",
+      "matched_targets": 29636,
+      "stations": 1449,
+      "observation_weighted_delta_mae": 0.31648458526394496
+    },
+    {
+      "source": "MH_telemetry",
+      "scenario": "block3",
+      "matched_targets": 27856,
+      "stations": 1449,
+      "observation_weighted_delta_mae": 3.476327324901141
+    }
+  ],
+  "bootstrap": [
+    {
+      "source": "MH_manual",
+      "scenario": "random20",
+      "stations": 1355,
+      "station_equal_delta_mae": 0.28647601476014756,
+      "ci_low": 0.24517263222632224,
+      "ci_high": 0.3282365006150061
+    },
+    {
+      "source": "MH_manual",
+      "scenario": "block3",
+      "stations": 1330,
+      "station_equal_delta_mae": 1.8673859649122804,
+      "ci_low": 1.7665279448621551,
+      "ci_high": 1.968582080200501
+    },
+    {
+      "source": "MH_telemetry",
+      "scenario": "random20",
+      "stations": 1449,
+      "station_equal_delta_mae": 0.31963050133580667,
+      "ci_low": 0.2915479933976027,
+      "ci_high": 0.34923802508056867
+    },
+    {
+      "source": "MH_telemetry",
+      "scenario": "block3",
+      "stations": 1449,
+      "station_equal_delta_mae": 3.588807234827686,
+      "ci_low": 3.2567225732233136,
+      "ci_high": 4.043250521937281
+    }
+  ],
+  "unseen_station": [
+    {
+      "source": "MH_manual",
+      "status": "COMPUTED",
+      "train": 20729,
+      "calibration": 3566,
+      "test": 5677,
+      "test_stations": 724,
+      "mae": 1.4934141416966453,
+      "interval_halfwidth": 3.5920364713079698,
+      "empirical_coverage": 0.9235511713933415,
+      "note": "Calibration and test stations disjoint; exchangeability not guaranteed"
+    },
+    {
+      "source": "MH_telemetry",
+      "status": "COMPUTED",
+      "train": 1012,
+      "calibration": 3079,
+      "test": 6020,
+      "test_stations": 298,
+      "mae": 2.52234268468429,
+      "interval_halfwidth": 3.8490725720959875,
+      "empirical_coverage": 0.8322259136212624,
+      "note": "Calibration and test stations disjoint; exchangeability not guaranteed"
+    }
+  ],
+  "original_prediction_rows": 93703,
+  "limitations": [
+    "Source-specific monthly averages; manual missing months are not necessarily monitoring failures",
+    "Telemetry sign and official sentinels not authenticated",
+    "Holdout split fixed by station hash; no state-level generalization claim",
+    "Calibration is heuristic, not guaranteed 90% coverage",
+    "Target trimming only; input anomalies remain",
+    "No IMD rainfall or GEC-2015 data supplied"
+  ]
+}

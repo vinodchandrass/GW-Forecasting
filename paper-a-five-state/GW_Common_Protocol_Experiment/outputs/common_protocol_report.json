@@ -1,0 +1,27 @@
+{
+  "status": "COMMON_PROTOCOL_EXPERIMENT_COMPLETE",
+  "protocol": "one-step latest-observed carry-forward within preceding six calendar months; deterministic history-only random20 or 3-month window masking; 2024-2025 targets; same-target baseline comparison; station-equal bootstrap 1000; target-absolute trimming",
+  "source_station_month_cells": {
+    "KA_manual": 124384,
+    "PB_telemetry": 42613,
+    "TN_telemetry": 29784,
+    "RJ_telemetry": 10972,
+    "MH_manual": 74914,
+    "MH_telemetry": 38825
+  },
+  "input_sha256": {
+    "D:\\GW\\GW_State4_Experiments\\outputs\\station_month_provisional.csv": "ecc20c22fa0b52b4ab8295856b35121d0a62bcfdbf138fbbf7e6a757f16f85de",
+    "D:\\GW\\Maharashtra_GW_Download\\downloads\\manual.csv": "5003c9030b34df310f0bdd0527df022b9b0e73aa780b5bbacc88cc49d1be0eb6",
+    "D:\\GW\\Maharashtra_GW_Download\\downloads\\telemetry.csv": "b4bf746c09eae07b7998328a5699ddc22989f7ec829509919b60421e7a366822"
+  },
+  "n_source_scenario_rows": 12,
+  "n_sensitivity_rows": 36,
+  "limitations": [
+    "Different underlying monitoring sources, temporal coverage and agency conventions remain; common computation does not equal equivalent data quality",
+    "Manual seasonal months are not missing scheduled measurements",
+    "Synthetic masking is not real-world causal monitoring failure",
+    "Candidate telemetry sentinel/sign conventions not officially authenticated",
+    "Unseen-station model harmonization not performed in this package",
+    "IMD rainfall and GEC-2015 effects not evaluated"
+  ]
+}
