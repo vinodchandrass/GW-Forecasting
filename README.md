@@ -1,10 +1,13 @@
-# GW-Forecasting
+# GW-Forecasting — Paper A experiments
 
-Repository for reproducible **experimental work only**, organized into two independent studies:
+This repository is dedicated **only to the five-state Groundwater Paper A experimental work** (Karnataka, Punjab, Rajasthan, Maharashtra, and Tamil Nadu).
 
-- [`paper-a-five-state/`](paper-a-five-state/) — five-state groundwater observation-gap and forecasting experiments.
-- [`paper-b-national/`](paper-b-national/) — national-scale groundwater forecasting and generalization experiments.
+## Publication scope
 
-**Scope:** reviewed experimental source code, evaluation protocols, and approved reproducibility metadata/results only. **Manuscripts, original datasets, processed datasets, and unverified intermediate files are not included.**
+Only investigator-approved, verified experimental scripts, evaluation protocols, and essential reproducibility metadata or numerical results created by this research will be uploaded.
 
-No experimental reproducibility claim is made until the corresponding artifacts have passed source-to-result verification. This repository currently contains the organizational scaffold only.
+**Not published here:** article manuscripts or drafts, figures or maps, original or processed datasets, third-party data or materials, unverified intermediate artifacts, credentials, or sensitive information.
+
+The repository currently contains organizational documentation only; no experimental results or reproducibility claims have yet been certified.
+
+Paper B is a separate research project and will not be placed in this repository.
