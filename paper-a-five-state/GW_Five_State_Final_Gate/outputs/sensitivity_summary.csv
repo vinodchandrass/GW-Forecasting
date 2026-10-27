@@ -1,0 +1,13 @@
+source,scenario,all,target_abs_le_p999,target_abs_le_p99,same_sign_all_thresholds
+KA_manual,block3,0.0,0.0,0.0,False
+KA_manual,random20,0.0,0.0,0.0,False
+MH_manual,block3,1.909270186335404,1.9098497409326427,1.8995086251960271,True
+MH_manual,random20,0.29450569476082,0.2949087591240876,0.2930694891854578,True
+MH_telemetry,block3,3.476327324901141,3.275421347136354,3.186441919538077,True
+MH_telemetry,random20,0.3164845852639449,0.3166685156483185,0.3138342807260601,True
+PB_telemetry,block3,0.0,0.0,0.0,False
+PB_telemetry,random20,0.0,0.0,0.0,False
+RJ_telemetry,block3,0.0,0.0,0.0,False
+RJ_telemetry,random20,0.0,0.0,0.0,False
+TN_telemetry,block3,0.0,0.0,0.0,False
+TN_telemetry,random20,0.0,0.0,0.0,False

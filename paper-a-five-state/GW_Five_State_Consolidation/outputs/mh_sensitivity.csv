@@ -1,0 +1,13 @@
+analysis_origin,source,scenario,target_abs_quantile,threshold,matched_targets,observation_weighted_delta_mae
+mh_sensitivity,MH_manual,random20,1.0,37.2,2195,0.29450569476082
+mh_sensitivity,MH_manual,random20,0.999,29.40900000000006,2192,0.2949087591240876
+mh_sensitivity,MH_manual,random20,0.99,19.205999999999992,2173,0.2930694891854578
+mh_sensitivity,MH_manual,block3,1.0,37.2,1932,1.909270186335404
+mh_sensitivity,MH_manual,block3,0.999,34.006899999999995,1930,1.9098497409326427
+mh_sensitivity,MH_manual,block3,0.99,21.4,1913,1.8995086251960271
+mh_sensitivity,MH_telemetry,random20,1.0,4749.800681818182,29636,0.3164845852639449
+mh_sensitivity,MH_telemetry,random20,0.999,67.01840460000204,29606,0.3166685156483185
+mh_sensitivity,MH_telemetry,random20,0.99,52.99312015810289,29339,0.3138342807260601
+mh_sensitivity,MH_telemetry,block3,1.0,4749.800681818182,27856,3.476327324901141
+mh_sensitivity,MH_telemetry,block3,0.999,65.25268410000004,27828,3.275421347136354
+mh_sensitivity,MH_telemetry,block3,0.99,52.39488400537629,27577,3.186441919538077
