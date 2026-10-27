@@ -1,0 +1,115 @@
+{
+  "status": "EXPLORATORY_EXPERIMENTS_ONLY",
+  "source_audits": [
+    {
+      "source": "KA_manual",
+      "status": "PROVISIONAL_NUMERIC_WITH_SENTINEL_SENSITIVITY",
+      "sha256": "8aa4ee64e27bf36bee0fc9d6c2408693b1ea7dffabd105700df31a399cdde596",
+      "rows_2021_2025": 124384,
+      "non_numeric": 0,
+      "candidate_sentinel_rows_excluded": 0,
+      "unparsed_dates": 0,
+      "station_month_cells": 124384,
+      "year_counts": {
+        "2024": 32496,
+        "2025": 30164,
+        "2023": 22875,
+        "2022": 21564,
+        "2021": 17285
+      },
+      "warning": "Sentinel list is provisional; value 958 requires agency confirmation. Monthly aggregation is arithmetic mean, not official seasonal statistic."
+    },
+    {
+      "source": "RJ_manual",
+      "status": "PROVISIONAL_NUMERIC_WITH_SENTINEL_SENSITIVITY",
+      "sha256": "29b4da988251c646dc4d7fe0e781607feebf98d69cffb25d6a228ce2303943a6",
+      "rows_2021_2025": 50242,
+      "non_numeric": 5562,
+      "candidate_sentinel_rows_excluded": 0,
+      "unparsed_dates": 0,
+      "station_month_cells": 42494,
+      "year_counts": {
+        "2023": 16217,
+        "2022": 14611,
+        "2021": 13760,
+        "2024": 5654
+      },
+      "warning": "Sentinel list is provisional; value 958 requires agency confirmation. Monthly aggregation is arithmetic mean, not official seasonal statistic."
+    },
+    {
+      "source": "PB_telemetry",
+      "status": "PROVISIONAL_NUMERIC_WITH_SENTINEL_SENSITIVITY",
+      "sha256": "a43d7754c3f324596e3d5299899caa56adcf6b54a46bd34e433dcb9e4027988c",
+      "rows_2021_2025": 4654552,
+      "non_numeric": 0,
+      "candidate_sentinel_rows_excluded": 934,
+      "unparsed_dates": 0,
+      "station_month_cells": 42613,
+      "year_counts": {
+        "2024": 1397548,
+        "2023": 1140579,
+        "2021": 704282,
+        "2022": 619749,
+        "2025": 792394
+      },
+      "warning": "Sentinel list is provisional; value 958 requires agency confirmation. Monthly aggregation is arithmetic mean, not official seasonal statistic."
+    },
+    {
+      "source": "TN_telemetry",
+      "status": "PROVISIONAL_NUMERIC_WITH_SENTINEL_SENSITIVITY",
+      "sha256": "3c8713179b39338b8e4adccb1ec911375df5a16bc45facaa83d9968d2d3637bc",
+      "rows_2021_2025": 3329036,
+      "non_numeric": 1432,
+      "candidate_sentinel_rows_excluded": 4643,
+      "unparsed_dates": 0,
+      "station_month_cells": 29784,
+      "year_counts": {
+        "2024": 1035840,
+        "2025": 697087,
+        "2023": 564412,
+        "2021": 562008,
+        "2022": 469689
+      },
+      "warning": "Sentinel list is provisional; value 958 requires agency confirmation. Monthly aggregation is arithmetic mean, not official seasonal statistic."
+    },
+    {
+      "source": "RJ_telemetry",
+      "status": "PROVISIONAL_NUMERIC_WITH_SENTINEL_SENSITIVITY",
+      "sha256": "ae9438b3c72ade8142140a8dc7b081fde319208ad0cf973adc5bd095831feec3",
+      "rows_2021_2025": 1037973,
+      "non_numeric": 0,
+      "candidate_sentinel_rows_excluded": 20245,
+      "unparsed_dates": 0,
+      "station_month_cells": 10972,
+      "year_counts": {
+        "2022": 201132,
+        "2021": 172690,
+        "2025": 379004,
+        "2023": 157813,
+        "2024": 127334
+      },
+      "warning": "Sentinel list is provisional; value 958 requires agency confirmation. Monthly aggregation is arithmetic mean, not official seasonal statistic."
+    }
+  ],
+  "source_month_cells": {
+    "KA_manual": 124384,
+    "PB_telemetry": 42613,
+    "RJ_manual": 42494,
+    "RJ_telemetry": 10972,
+    "TN_telemetry": 29784
+  },
+  "forecast_predictions": 129967,
+  "limits": [
+    "No official monitoring schedule: observed-month coverage is not expected-observation completeness",
+    "Station identity not independently authenticated",
+    "Candidate sentinel exclusions provisional, particularly 958",
+    "Manual and telemetry are not pooled",
+    "No IMD rainfall data: rainfall experiment NOT EXECUTED",
+    "No GEC resource-estimation input records: GEC impact NOT EXECUTED",
+    "No unseen-station model training: unseen-station experiment NOT EXECUTED",
+    "No 90-percent calibrated interval: interval coverage NOT EXECUTED",
+    "No randomized gap masking: causal missingness impact NOT EXECUTED",
+    "2024-2025 test uses rolling observed historical values; not a fixed-origin multi-step forecast",
+    "No inferential p-values: avoid superiority claims"
+  ]
+}

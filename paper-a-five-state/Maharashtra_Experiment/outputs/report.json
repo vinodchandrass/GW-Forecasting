@@ -1,0 +1,197 @@
+{
+  "status": "COMPUTED_PROVISIONAL",
+  "method": "Source-specific monthly arithmetic means; rolling prior-month carry-forward, 2024-2025 evaluation; synthetic 20% and three-month gaps. Not a replication of earlier four-state experiments.",
+  "sources": {
+    "MH_manual": {
+      "sha256": "5003c9030b34df310f0bdd0527df022b9b0e73aa780b5bbacc88cc49d1be0eb6",
+      "counts": {
+        "total": 636605,
+        "period_rows": 75685,
+        "nonnumeric": 372
+      },
+      "states": {
+        "Maharashtra": 75685
+      },
+      "agencies": {
+        "GSDA-Maharashtra": 75685
+      },
+      "year_rows": {
+        "2021": 15031,
+        "2022": 14945,
+        "2023": 15649,
+        "2024": 14918,
+        "2025": 14770
+      },
+      "month_rows": {
+        "2021-01": 2989,
+        "2021-02": 883,
+        "2021-03": 3437,
+        "2021-04": 295,
+        "2021-05": 3184,
+        "2021-06": 538,
+        "2021-09": 2240,
+        "2021-10": 1459,
+        "2021-12": 6,
+        "2022-01": 3431,
+        "2022-02": 274,
+        "2022-03": 3285,
+        "2022-04": 424,
+        "2022-05": 3169,
+        "2022-06": 622,
+        "2022-09": 2023,
+        "2022-10": 1698,
+        "2022-12": 19,
+        "2023-01": 3108,
+        "2023-02": 614,
+        "2023-03": 3036,
+        "2023-04": 655,
+        "2023-05": 2890,
+        "2023-06": 805,
+        "2023-09": 2837,
+        "2023-10": 1291,
+        "2023-11": 241,
+        "2023-12": 172,
+        "2024-01": 2851,
+        "2024-02": 830,
+        "2024-03": 3646,
+        "2024-04": 185,
+        "2024-05": 2402,
+        "2024-06": 1300,
+        "2024-09": 2305,
+        "2024-10": 1399,
+        "2025-01": 2451,
+        "2025-02": 1279,
+        "2025-03": 2665,
+        "2025-04": 1018,
+        "2025-05": 2556,
+        "2025-06": 1103,
+        "2025-09": 2314,
+        "2025-10": 1384
+      },
+      "station_month_cells": 74914,
+      "stations": 3871,
+      "forecast_metrics": [
+        {
+          "source": "MH_manual",
+          "scenario": "none",
+          "predictions": 2295,
+          "stations": 1391,
+          "mae": 1.5618082788671024
+        },
+        {
+          "source": "MH_manual",
+          "scenario": "random20",
+          "predictions": 2195,
+          "stations": 1355,
+          "mae": 1.8609658314350799
+        },
+        {
+          "source": "MH_manual",
+          "scenario": "block3",
+          "predictions": 1932,
+          "stations": 1330,
+          "mae": 3.4993478260869564
+        }
+      ],
+      "date_min": "2021-01",
+      "date_max": "2025-10"
+    },
+    "MH_telemetry": {
+      "sha256": "b4bf746c09eae07b7998328a5699ddc22989f7ec829509919b60421e7a366822",
+      "counts": {
+        "total": 3928623,
+        "period_rows": 3928623,
+        "nonfinite": 15
+      },
+      "states": {
+        "Maharashtra": 3928623
+      },
+      "agencies": {
+        "Maharashtra GW": 3928623
+      },
+      "year_rows": {
+        "2023": 820444,
+        "2024": 1867272,
+        "2025": 1232446,
+        "2022": 8446
+      },
+      "month_rows": {
+        "2022-09": 569,
+        "2022-10": 922,
+        "2022-11": 1339,
+        "2022-12": 5616,
+        "2023-01": 17842,
+        "2023-02": 20000,
+        "2023-03": 35913,
+        "2023-04": 51729,
+        "2023-05": 57586,
+        "2023-06": 73949,
+        "2023-07": 86748,
+        "2023-08": 88373,
+        "2023-09": 88668,
+        "2023-10": 94585,
+        "2023-11": 96979,
+        "2023-12": 108072,
+        "2024-01": 112824,
+        "2024-02": 119029,
+        "2024-03": 151459,
+        "2024-04": 159644,
+        "2024-05": 170307,
+        "2024-06": 169238,
+        "2024-07": 167555,
+        "2024-08": 160781,
+        "2024-09": 167788,
+        "2024-10": 172713,
+        "2024-11": 160702,
+        "2024-12": 155232,
+        "2025-01": 135745,
+        "2025-02": 104150,
+        "2025-03": 124123,
+        "2025-04": 124458,
+        "2025-05": 131648,
+        "2025-06": 105410,
+        "2025-07": 95032,
+        "2025-08": 74009,
+        "2025-09": 98544,
+        "2025-10": 111889,
+        "2025-11": 95370,
+        "2025-12": 32068
+      },
+      "station_month_cells": 38825,
+      "stations": 1453,
+      "forecast_metrics": [
+        {
+          "source": "MH_telemetry",
+          "scenario": "none",
+          "predictions": 29789,
+          "stations": 1449,
+          "mae": 2.395297995119122
+        },
+        {
+          "source": "MH_telemetry",
+          "scenario": "random20",
+          "predictions": 29636,
+          "stations": 1449,
+          "mae": 2.715047410295709
+        },
+        {
+          "source": "MH_telemetry",
+          "scenario": "block3",
+          "predictions": 27856,
+          "stations": 1449,
+          "mae": 5.871596020473944
+        }
+      ],
+      "date_min": "2022-09",
+      "date_max": "2025-12"
+    }
+  },
+  "limitations": [
+    "No authenticated monitoring schedule or sentinel dictionary",
+    "No official telemetry sign convention verified",
+    "Monthly telemetry averages are exploratory",
+    "No IMD rainfall/GEC-2015 evaluation",
+    "Missingness predictions have differing eligible targets; not causal matched effects",
+    "No unseen-station trained model in this lightweight run"
+  ]
+}

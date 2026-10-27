@@ -1,0 +1,50 @@
+{
+  "status": "MATCHED_SENSITIVITY_COMPLETE",
+  "input": "D:\\GW\\GW_State4_Final_Experiments\\outputs\\gap_predictions.csv",
+  "method": "exact source/station/month/replicate/model paired comparisons; station bootstrap",
+  "source_sha256": "4f433eca55e641ef3cebdab95cc2bf94c1a5788898a9bbbcb4bab052df1a6cef",
+  "sources": {
+    "KA_manual": {
+      "input_rows": 6627754,
+      "duplicate_prediction_keys": 0,
+      "truth_abs_p99": 137.0,
+      "truth_abs_p999": 225.91,
+      "truth_abs_max": 301.3,
+      "truth_abs_gt100": 126514,
+      "warning": "Extreme-value thresholds are diagnostics, not verified physical validity limits"
+    },
+    "PB_telemetry": {
+      "input_rows": 2205252,
+      "duplicate_prediction_keys": 0,
+      "truth_abs_p99": 138.92255813953489,
+      "truth_abs_p999": 999.0,
+      "truth_abs_max": 999.3958666666666,
+      "truth_abs_gt100": 25465,
+      "warning": "Extreme-value thresholds are diagnostics, not verified physical validity limits"
+    },
+    "RJ_telemetry": {
+      "input_rows": 238043,
+      "duplicate_prediction_keys": 0,
+      "truth_abs_p99": 153.49366666666668,
+      "truth_abs_p999": 158.96939516129035,
+      "truth_abs_max": 160.30717857142858,
+      "truth_abs_gt100": 7426,
+      "warning": "Extreme-value thresholds are diagnostics, not verified physical validity limits"
+    },
+    "TN_telemetry": {
+      "input_rows": 1634281,
+      "duplicate_prediction_keys": 0,
+      "truth_abs_p99": 57.67672727272727,
+      "truth_abs_p999": 416.7993023255814,
+      "truth_abs_max": 36964.67658333333,
+      "truth_abs_gt100": 3201,
+      "warning": "Extreme-value thresholds are diagnostics, not verified physical validity limits"
+    }
+  },
+  "limitations": [
+    "Station bootstrap describes sensitivity to synthetic masks, not causal effects of real outages",
+    "Source sign/datum and sentinel semantics remain provisional",
+    "Missing target/prediction pairs excluded; report matched sample sizes",
+    "No IMD/GEC experiments executed"
+  ]
+}

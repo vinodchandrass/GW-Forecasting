@@ -1,0 +1,105 @@
+{
+  "protocol": "PROVISIONAL_RESEARCH_EXPERIMENTS",
+  "source_file": "D:\\GW\\GW_State4_Experiments\\outputs\\station_month_provisional.csv",
+  "seed": 20261020,
+  "limitations": [
+    "Source sign conventions and missing codes not officially confirmed",
+    "Station IDs are source-specific; no cross-source physical well linkage",
+    "Monthly mean of telemetry is an exploratory proxy, not an official seasonal reading",
+    "Missingness interventions are synthetic and estimate algorithmic sensitivity, not real-world causal impact",
+    "No IMD rainfall or GEC input data supplied: not executed",
+    "90% intervals are empirical split-calibrated and exploratory, not guaranteed distribution-free under dependence"
+  ],
+  "monthly_input_sha256": "ecc20c22fa0b52b4ab8295856b35121d0a62bcfdbf138fbbf7e6a757f16f85de",
+  "sources": {
+    "KA_manual": {
+      "observed_month_cells": 124384,
+      "stations": 2709,
+      "stations_with_18plus_observed_months": 2610,
+      "unseen_split": {
+        "training_stations": 2088,
+        "heldout_stations": 522,
+        "training_examples": 21689,
+        "calibration_examples": 8640,
+        "test_examples": 10702,
+        "training_period": "2022-01 to 2023-06",
+        "calibration_period": "2023-07 to 2023-12",
+        "test_period": "2024-01 to 2025-12",
+        "status": "EXECUTED",
+        "calibration_absolute_error_q90": 4.42870881792146,
+        "empirical_90_interval_note": "Split-calibration is based on non-held-out stations and different years; temporal/spatial exchangeability not established"
+      }
+    },
+    "PB_telemetry": {
+      "observed_month_cells": 42613,
+      "stations": 1039,
+      "stations_with_18plus_observed_months": 1031,
+      "unseen_split": {
+        "training_stations": 824,
+        "heldout_stations": 207,
+        "training_examples": 7123,
+        "calibration_examples": 2471,
+        "test_examples": 3531,
+        "training_period": "2022-01 to 2023-06",
+        "calibration_period": "2023-07 to 2023-12",
+        "test_period": "2024-01 to 2025-12",
+        "status": "EXECUTED",
+        "calibration_absolute_error_q90": 3.3601150926421433,
+        "empirical_90_interval_note": "Split-calibration is based on non-held-out stations and different years; temporal/spatial exchangeability not established"
+      }
+    },
+    "RJ_manual": {
+      "observed_month_cells": 42494,
+      "stations": 7422,
+      "stations_with_18plus_observed_months": 0,
+      "status": "INSUFFICIENT_HISTORY"
+    },
+    "RJ_telemetry": {
+      "observed_month_cells": 10972,
+      "stations": 974,
+      "stations_with_18plus_observed_months": 143,
+      "unseen_split": {
+        "training_stations": 114,
+        "heldout_stations": 29,
+        "training_examples": 1767,
+        "calibration_examples": 531,
+        "test_examples": 362,
+        "training_period": "2022-01 to 2023-06",
+        "calibration_period": "2023-07 to 2023-12",
+        "test_period": "2024-01 to 2025-12",
+        "status": "EXECUTED",
+        "calibration_absolute_error_q90": 0.9799410168522371,
+        "empirical_90_interval_note": "Split-calibration is based on non-held-out stations and different years; temporal/spatial exchangeability not established"
+      }
+    },
+    "TN_telemetry": {
+      "observed_month_cells": 29784,
+      "stations": 849,
+      "stations_with_18plus_observed_months": 761,
+      "unseen_split": {
+        "training_stations": 608,
+        "heldout_stations": 153,
+        "training_examples": 4377,
+        "calibration_examples": 1754,
+        "test_examples": 2208,
+        "training_period": "2022-01 to 2023-06",
+        "calibration_period": "2023-07 to 2023-12",
+        "test_period": "2024-01 to 2025-12",
+        "status": "EXECUTED",
+        "calibration_absolute_error_q90": 3.5219782030539406,
+        "empirical_90_interval_note": "Split-calibration is based on non-held-out stations and different years; temporal/spatial exchangeability not established"
+      }
+    }
+  },
+  "status": "EXPERIMENTS_EXECUTED_WITH_PROVISIONAL_SOURCE_SEMANTICS",
+  "gap_prediction_rows": 10705330,
+  "unseen_station_prediction_rows": 16803,
+  "outputs": [
+    "gap_metrics.csv",
+    "paired_station_bootstrap.csv",
+    "unseen_station_metrics.csv",
+    "station_gap_summary.csv",
+    "gap_predictions.csv",
+    "unseen_station_predictions.csv"
+  ]
+}

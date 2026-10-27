@@ -1,0 +1,34 @@
+{
+  "status": "DESCRIPTIVE_EVIDENCE_AUDIT_COMPLETE",
+  "issues": [],
+  "sources": [
+    "KA_manual",
+    "MH_manual",
+    "MH_telemetry",
+    "PB_telemetry",
+    "RJ_telemetry",
+    "TN_telemetry"
+  ],
+  "matched_comparisons": 12,
+  "unseen_source_rows": 6,
+  "sensitivity_comparisons": 12,
+  "input_sha256": {
+    "source_specific_matched_effects.csv": "fcae834061f193e738cae4c594e27954d3275c4d7f451c3c0e9930e936121efe",
+    "four_sensitivity.csv": "568a96320b8c7e42441a65bb4296c4a129720ca1c22d8815c837fb3672020c3e",
+    "mh_sensitivity.csv": "52eb0101dfb783dfa5737fcb909df820d280613446a55f8a7b4868bb9a4dfb74",
+    "source_specific_unseen_station.csv": "ac8e125dea167d40bb1c01a9bebfc8b1b9f18c48f6a94c20c844dad165c73344"
+  },
+  "protocol_harmonized": false,
+  "reason": "Original four-state and Maharashtra experiments used different pipelines and evaluation eligibility; summary relabeling does not harmonize experiments.",
+  "inferential_warning": "Observation-weighted point estimates and station-equal confidence intervals have different estimands.",
+  "source_quality_unverified": [
+    "manual monitoring schedule",
+    "telemetry sign/datum and sentinel definitions"
+  ],
+  "outside_scope_not_executed": [
+    "IMD rainfall linkage",
+    "GEC-2015 resource estimation"
+  ],
+  "decision": "FREEZE_DESCRIPTIVE_ONLY_OR_RUN_NEW_COMMON_PROTOCOL",
+  "recommended_scope": "Source-specific evidence on simulated observation gaps and unseen-station forecasting, without causal or state-ranking claims."
+}
